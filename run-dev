@@ -1,0 +1,6 @@
+#!/bin/bash
+# Simple shell script to run application in dev mode
+PATH=node_modules/.bin:$PATH nodemon ./bin/www
+
+
+# docker run -i -p 3000:3000 -v "$PWD"/:/app -v$PWD"/node_modules_linux:/app/node_modules -t nodeserver-tools /bin/run-dev

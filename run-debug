@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Simple shell script to run debug mode.
+node --inspect=0.0.0.0 ./bin/www
+# docker run -i --expose 9229 -p 9229:9229 -p 3000:3000 -v "$PWD"/app -v "$PWD"/node_modules_linux:/app/node_modules -t nodeserver-tools /bin/run-debug
